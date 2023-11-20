@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<h1>Hello World</h1>
+<script>
+    function great(name){
+        console.log("Hello " + name);
+    }
+    great('John');
+
+    let myFunction = function(a, b){
+        return a, b;
+    }
+    let result = myFunction(10, 25);
+    console.log(result);
+
+    //arrow function
+    let calculator = (a, b) => {
+        return a*b;
+    };
+    console.log(calculator(10,10));
+
+    //ITFE function
+    {function calc(a, b){
+        console.log(a-b);
+    }}(50,25);
+
+    //callback function
+    function calculator(a,b, callback) {
+        return callback(a, b);
+    }
+    let res = calculator(10, 15, multi);
+    console.log(res);
+
+</script>
+</html>
